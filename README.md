@@ -98,7 +98,7 @@ To English =>
 
 # 🏃‍♂️ Deploying To Heroku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/im-bb/vuserbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/im-bb/vubot)
 
 ``` Always try to  Deploy this source. If not you will miss the future updates```
 
