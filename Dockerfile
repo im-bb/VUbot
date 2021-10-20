@@ -25,6 +25,7 @@ RUN apt-get install -y\
     libsqlite3-dev \
     libwebp-dev \
     libgl1 \
+    libmagic-dev \
     musl \
     neofetch \
     libcurl4-openssl-dev \
@@ -61,7 +62,7 @@ RUN rm -r /root/.cache
 RUN axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 RUN axel https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && chmod +x chromedriver && mv -f chromedriver /usr/bin/ && rm chromedriver_linux64.zip
 RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip && unzip opencv.zip && mv -f opencv-master /usr/bin/ && rm opencv.zip
-RUN git clone https://github.com/inukaasith/virtualuserbot /root/fridaybot
+RUN git clone https://github.com/im-bb/vuserbot /root/fridaybot
 RUN mkdir /root/fridaybot/bin/
 RUN mkdir /root/fridaybot/bin/megadown
 WORKDIR /root/fridaybot/
