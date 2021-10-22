@@ -1,3 +1,5 @@
+### DON'T DEPLOY THE BOT USING THIS SOURCE THIS IS FOR MY PERSONAL USAGE !
+
 ### 𝗗𝗘𝗣𝗟𝗢𝗬 𝗧𝗢 𝗛𝗘𝗥𝗢𝗞𝗨 
 <details>
   <summary><b>𝖣𝖾𝗉𝗅𝗈𝗒 𝗈𝗇 𝖧𝖾𝗋𝗈𝗄𝗎</b></summary>
@@ -13,7 +15,7 @@
 
 ---
 
-## 𝗖𝗥𝗘𝗗𝗜𝗧𝗦
+### 𝗖𝗥𝗘𝗗𝗜𝗧𝗦
 <details>
   <summary><b>𝖲𝖾𝖾</b></summary>
 <br/>
