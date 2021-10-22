@@ -1,5 +1,22 @@
+### 𝗗𝗘𝗣𝗟𝗢𝗬 𝗧𝗢 𝗛𝗘𝗥𝗢𝗞𝗨 
+<details>
+  <summary><b>𝖣𝖾𝗉𝗅𝗈𝗒 𝗈𝗇 𝖧𝖾𝗋𝗈𝗄𝗎</b></summary>
+<br/>
 
+<p align="left">
+  <a href="https://heroku.com/deploy?template=https://github.com/im-bb/VUbot">
+     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
+  </a>
+</p>
 
+</details>
+
+---
+
+## 𝗖𝗥𝗘𝗗𝗜𝗧𝗦
+<details>
+  <summary><b>𝖲𝖾𝖾</b></summary>
+<br/>
 
 <h1 align="center"><b> Virtual-USERBOT 🇱🇰  </b></h1>
 <h4 align="center">A Powerful, Smart And Simple Userbot with 300+ Plugins <br> ... The Userbot Remix ...</h4>
@@ -233,3 +250,7 @@ All the plugins are reconfigured for for virtualuserbot. So if you have any erro
 ## ❤️ Made possible by [Friday Project](https://github.com/StarkGang/FridayUserbot) and many other opensource projects.. ❤️
 
 ### 😍 Project by [Infinity_Bots](https://t.me/Infinity_Bots)  😍
+    
+</details>   
+
+---
