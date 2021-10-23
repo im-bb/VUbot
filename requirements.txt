@@ -1,6 +1,5 @@
 Pillow
 google-trans-new
-cryptg
 nospamplus
 pymediainfo
 quote
