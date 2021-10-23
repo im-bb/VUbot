@@ -9,10 +9,10 @@ from telethon.tl import functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from fridaybot import CMD_HELP, ALIVE_NAME
+from fridaybot import CMD_HELP, YOUR_NAME
 from fridaybot.utils import friday_on_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "VIRTUAL USERBOT"
+DEFAULTUSER = str(YOUR_NAME) if ALIVE_NAME else "VIRTUAL USERBOT"
 DEFAULTUSERBIO = "404: No bio found!"
 if Var.PRIVATE_GROUP_ID is None:
     BOTLOG = False
