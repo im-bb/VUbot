@@ -9,9 +9,16 @@ from telethon.tl import functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from fridaybot import CMD_HELP
+from fridaybot import CMD_HELP, ALIVE_NAME
 from fridaybot.utils import friday_on_cmd
 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "VIRTUAL USERBOT"
+DEFAULTUSERBIO = "404: No bio found!"
+if Var.PRIVATE_GROUP_ID is None:
+    BOTLOG = False
+else:
+    BOTLOG = True
+    BOTLOG_CHATID = Var.PRIVATE_GROUP_ID
 
 @friday.on(friday_on_cmd(pattern="clone ?(.*)"))
 async def _(event):
@@ -68,7 +75,26 @@ async def _(event):
         event.chat_id, "**LET US BE AS ONE**", reply_to=reply_message
     )
 
-
+@Fridaybot.on(friday_on_cmd(pattern="revert$"))
+async def _(event):
+    if event.fwd_from:
+        return
+    name = f"{DEFAULTUSER}"
+    bio = f"{DEFAULTUSERBIO}"
+    n = 1
+    await borg(
+        functions.photos.DeletePhotosRequest(
+            await event.client.get_profile_photos("me", limit=n)
+        )
+    )
+    await borg(functions.account.UpdateProfileRequest(about=bio))
+    await borg(functions.account.UpdateProfileRequest(first_name=name))
+    await event.edit("succesfully reverted to your account back")
+    if BOTLOG:
+        await event.client.send_message(
+            BOTLOG_CHATID, f"#REVERT\nSuccesfully reverted back to your profile"
+        )
+    
 async def get_full_user(event):
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
@@ -127,6 +153,9 @@ CMD_HELP.update(
     {
         "clone": "**Clone**\
 \n\n**Syntax : **`.clone <@username/tag anyone>`\
-\n**Usage :** Get Telegram Profile Picture and other information and set as own profile."
+\n**Usage :** Get Telegram Profile Picture and other information and set as own profile.\
+\n\n.revert\
+    \nUse - Reverts back to your profile which you have set in heroku.\
+    "
     }
 )
